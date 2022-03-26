@@ -97,7 +97,22 @@ function perfectFriend(friendList){
     return largest;
 }
 
-// var friendName = perfectFriend(['eva','abcdefg','afnan','abcde'])
+// var friendName = perfectFriend(['eva','abcdefg','afnan','ariya'])
 // console.log(friendName);
 
 // // Problem 4 end--------*/
+
+// megaFriend
+function megaFriend(arr){
+    var value =0;
+    for (var i=0;i<arr.length;i++){ 
+      if(arr[i].length>value){ 
+       value = arr[i].length;
+        var biggest = arr[i];
+      }
+    }
+    return biggest;   
+  }
+
+    var friendName =  megaFriend(['eva','afnan','arisha'])
+    console.log(friendName);
